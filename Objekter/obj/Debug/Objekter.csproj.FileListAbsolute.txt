@@ -1,0 +1,14 @@
+C:\Users\jbr\source\repos\Objekter\Objekter\bin\Debug\Objekter.exe.config
+C:\Users\jbr\source\repos\Objekter\Objekter\bin\Debug\Objekter.exe
+C:\Users\jbr\source\repos\Objekter\Objekter\bin\Debug\Objekter.pdb
+C:\Users\jbr\source\repos\Objekter\Objekter\obj\Debug\Objekter.csprojAssemblyReference.cache
+C:\Users\jbr\source\repos\Objekter\Objekter\obj\Debug\MainWindow.g.cs
+C:\Users\jbr\source\repos\Objekter\Objekter\obj\Debug\App.g.cs
+C:\Users\jbr\source\repos\Objekter\Objekter\obj\Debug\Objekter_MarkupCompile.cache
+C:\Users\jbr\source\repos\Objekter\Objekter\obj\Debug\Objekter_MarkupCompile.lref
+C:\Users\jbr\source\repos\Objekter\Objekter\obj\Debug\MainWindow.baml
+C:\Users\jbr\source\repos\Objekter\Objekter\obj\Debug\Objekter.g.resources
+C:\Users\jbr\source\repos\Objekter\Objekter\obj\Debug\Objekter.Properties.Resources.resources
+C:\Users\jbr\source\repos\Objekter\Objekter\obj\Debug\Objekter.csproj.GenerateResource.cache
+C:\Users\jbr\source\repos\Objekter\Objekter\obj\Debug\Objekter.exe
+C:\Users\jbr\source\repos\Objekter\Objekter\obj\Debug\Objekter.pdb
