@@ -20,14 +20,44 @@ namespace Objekter
     /// </summary>
     public partial class MainWindow : Window
     {
+        Dog myDog;
+        Pig myPig;
+        Animal[] myAnimals = new Animal[2];
         public MainWindow()
         {
             InitializeComponent();
-            Console.WriteLine("Hej");
+            InitialiseData();
+            update_view();
         }
-        void submit_Click(object sender, RoutedEventArgs e)
+        void InitialiseData()
         {
-            output.Content = "Hello, " + input.Text;
+            myDog = new Dog();
+            myDog.Name = "Buller";
+            myAnimals[0] = myDog;
+            myPig = new Pig();
+            myPig.Name = "Øffe";
+            myAnimals[1] = myPig;
+        }
+        void update_dog(object sender, RoutedEventArgs e)
+        {
+            // Modellen opdateres:
+            myDog.Name = dog_input.Text;
+            update_view();
+        }
+        void update_pig(object sender, RoutedEventArgs e)
+        {
+            // Modellen opdateres:
+            myPig.Name = pig_input.Text;
+            update_view();
+        }
+        private void update_view()
+        {
+            dog_output.Content = myDog.Name;
+            pig_output.Content = myPig.Name;
+            foreach (Animal a in myAnimals)
+            {
+                a.AnimalSound();
+            }
         }
     }
 }

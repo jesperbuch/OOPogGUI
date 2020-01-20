@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:Objekter"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Name="pnlMainGrid" Background="LightBlue">
         <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
@@ -15,17 +17,20 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Label Grid.Row="0" Grid.Column="0">
-            Indtast input:
-        </Label>
-        <TextBox Grid.Row="0" Grid.Column="1" Name="input" Margin="0,5,10,5"/>
-        <Button Grid.Row="0" Grid.Column="2" Name="submit" Margin="2" Click="submit_Click">
-            Beregn
-        </Button>
-        <Label Grid.Row="1" Grid.Column="2" Name="output">
-            ...
-        </Label>
+        <Label Grid.Row="0" Grid.Column="0">Hund:</Label>
+        <Label Grid.Row="0" Grid.Column="1" Name="dog_output"></Label>
+        <TextBox Grid.Row="0" Grid.Column="2" Name="dog_input" Margin="0,5,10,5"/>
+        <Button Grid.Row="0" Grid.Column="3" Name="submit_dog" Margin="2" Click="update_dog">Sæt navn</Button>
+
+        <Label Grid.Row="1" Grid.Column="0">Gris:</Label>
+        <Label Grid.Row="1" Grid.Column="1" Name="pig_output"></Label>
+        <TextBox Grid.Row="1" Grid.Column="2" Name="pig_input" Margin="0,5,10,5"/>
+        <Button Grid.Row="1" Grid.Column="3" Name="submit_pig" Margin="2" Click="update_pig">Sæt navn</Button>
+
+        <Label Content="{StaticResource app_name}" Grid.Row="4" Grid.Column="3"/>
+
     </Grid>
 </Window>
